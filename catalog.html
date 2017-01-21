@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="utf-8">
+	<title>HTML Academy: Нёрдс</title>
+</head>
+
+<body class="catalog-page">
+	<header class="header catalog-page__header">
+		<div class="container">
+			<div class="header-menu menu">
+				<div class="menu__logo logo">
+					<img class="logo__img" href="#" width="160px" heigth="65px" alt="нёрдс-лого">
+				</div>
+				<div class="menu-nav">
+					<ul class="nav">
+						<li class="nav__item">
+							<a class="nav__link" href="#">Студия</a>
+						</li>
+						<li class="nav__item">
+							<a class="nav__link" href="#">Клиенты</a>
+						</li>
+						<li class="nav__item">
+							<a class="nav__link nav__link_active" href="#">Магазин</a>
+						</li>
+						<li class="nav__item">
+							<a class="nav__link" href="#">Контакты</a>
+						</li>
+						<li class="nav__item nav__item_bucket-box">
+							<a class="nav__link nav__link_bucket" href="#">
+								<span class="nav__link_icon"></span>Корзина
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="container">
+			<h1 class="header-catalog__title">Магазин готовых шаблонов</h1>
+		</div>
+	</header>
+	<main class="catalog-page__main">
+		<div class="catalog">
+			<div class="container">
+				<form class="catalog-filter catalog-filter_left" action="#" mathod="get">
+					<fieldset class="catalog-filter__price">
+						<legend class="filter-price__title">Стоимость:</legend>
+						<div class="filter-price__range-controls">
+							<div class="scale range-controls__scale">
+								<div class="bar range-controls__bar"></div>
+							</div>
+							<div class="toggle range-controls__toggle_min"></div>
+							<div class="toggle range-controls__toggle_max"></div>
+						</div>
+						<div class="filter-price__number-controls">
+							<input class="number-controls__price number-controls__price_min" type="number" name="price" value="0">
+							<input class="number-controls__price number-controls__price_max" type="number" name="price" value="15 000">
+						</div>
+						<fieldset class="catalog-filter__type">
+							<legend class="filter-type__title">Сетка:</legend>
+							<input class="filter-type__input" type="radio" name="type" id="adaptive" checked>
+							<label class="filter-type__label" for="adaptive">Адаптивная</label>
+							<input class="filter-type__input" type="radio" name="type" id="fixed">
+							<label class="filter-type__label" for="fixed">Фиксированная</label>
+							<input class="filter-type__input" type="radio" name="type" id="flexible">
+							<label class="filter-type__label" for="flexible">Резиновая</label>
+						</fieldset>
+						<fieldset class="catalog-filter__properties">
+							<legend class="filter-properties__title">Особенности:</legend>
+							<input class="filter-properties__input" type="checkbox" name="property" id="slider" checked>
+							<label class="filter-properties__label" for="slider">Слайдер
+							</label>
+							<input class="filter-properties__input" type="checkbox" name="property" id="block-features" checked>
+							<label class="filter-properties__label" for="block-features">
+								Блок преимуществ</label>
+							<input class="filter-properties__input" type="checkbox" name="property" id="news">
+							<label class="filter-properties__label" for="news">
+								Новости</label>
+							<input class="filter-properties__input" type="checkbox" name="property" id="gallery">
+							<label class="filter-properties__label" for="gallery">
+								Галерея
+							</label>
+							<input class="filter-properties__input" type="checkbox" name="property" id="bucket">
+							<label class="filter-properties__label" for="bucket">
+								Корзина</label>
+						</fieldset>
+						<a href="#" class="btn-submit catalog-filter__btn">Показать</a>
+					</fieldset>
+				</form>
+				<div class="catalog-view catalog-view_right">
+					<div class="catalog-view__sorting">
+						<h3 class="sorting__title">Сортировка:</h3>
+						<ul class="sorting__list">
+							<li class="sorting__item">
+								<a class="sorting__link">По цене</a>
+							</li>
+							<li class="sorting__item">
+								<a class="sorting__link">По типу</a>
+							</li>
+							<li class="sorting__item">
+								<a class="sorting__link">По названию</a>
+							</li>
+							<li class="sorting__item">
+								<a class="sorting__link sorting__link_arrow">
+									<span class="sorting__icon sorting__icon_up"></span>
+								</a>
+							</li>
+							<li class="sorting__item">
+								<a class="sorting__link sorting__link_arrow">
+									<span class="sorting__icon sorting__icon_up"></span>
+								</a>
+							</li>
+						</ul>
+					</div>
+					<div class="catalog-view__projects">
+						<div class="projects-item">
+							<div class="projects-item__frame">
+							</div>
+							<img class="projects-item__img" width="360px" height="576px">
+							<div class="projects-item__action">
+								<h3 class="action__title">Sedona</h3>
+								<p class="action__text">Информационный сайт для туристов</p>
+								<a class="btn action__btn">9 900 <span>РУБ.</span></a>
+							</div>
+						</div>
+						<div class="projects-item">
+							<div class="projects-item__frame">
+							</div>
+							<img class="projects-item__img" width="360px" height="576px">
+							<div class="projects-item__action">
+								<h3 class="action__title">Pink App</h3>
+								<p class="action__text">Продуктовый лендинг приложения для iOS и Android</p>
+								<a class="btn action__btn">9 900 <span>РУБ.</span></a>
+							</div>
+						</div>
+						<div class="projects-item">
+							<div class="projects-item__frame">
+							</div>
+							<img class="projects-item__img" width="360px" height="576px">
+							<div class="projects-item__action">
+								<h3 class="action__title">Barbershop</h3>
+								<p class="action__text">Сайт салоны красоты. Для мужчин, да.</p>
+								<a class="btn action__btn">9 900 <span>РУБ.</span></a>
+							</div>
+						</div>
+						<div class="projects-item">
+							<div class="projects-item__frame">
+							</div>
+							<img class="projects-item__img" width="360px" height="576px">
+							<div class="projects-item__action">
+								<h3 class="action__title">Mishka</h3>
+								<p class="action__text">Интернет-магазин вязаных игрушек</p>
+								<a class="btn action__btn">9 900 <span>РУБ.</span></a>
+							</div>
+						</div>
+						<div class="projects-item">
+							<div class="projects-item__frame">
+							</div>
+							<img class="projects-item__img" width="360px" height="576px">
+							<div class="projects-item__action">
+								<h3 class="action__title">A plus</h3>
+								<p class="action__text">Лендинг курсов повышения квалификации</p>
+								<a class="btn action__btn">9 900 <span>РУБ.</span></a>
+							</div>
+						</div>
+						<div class="projects-item">
+							<div class="projects-item__frame">
+							</div>
+							<img class="projects-item__img" width="360px" height="576px">
+							<div class="projects-item__action">
+								<h3 class="action__title">Квас</h3>
+								<p class="action__text">Промо-сайт производителя крафтового кваса</p>
+								<a class="btn action__btn">9 900 <span>РУБ.</span></a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<ul class="pagination catalog-view__pagination">
+					<li><a class="btn-pagination btn-pagination_active" href="#">1</a></li>
+					<li><a class="btn-pagination" href="#">2</a></li>
+					<li><a class="btn-pagination" href="#">3</a></li>
+					<li><a class="btn-pagination btn-pagination_next" href="#">Следующая</a></li>
+				</ul>
+				<div class="map-block">
+					<div class="map"></div>
+					<div class="container">
+						<div class="map-content address">
+							<h2 class="address__title">NЁRDS DESIGN STUDIO</h2>
+							<address class="address__text">
+						<p class="adress__street">191186, Санкт-Петербург, 
+							ул. Б. Конюшенная, д. 19/8</p>
+						<p class="address__phone-number">тел. +7 (812) 275-75-75</p>
+					</address>
+							<a class="btn address__btn" href="#"></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</main>
+	<footer class="index-page_footer">
+		<div class="fcontainer">
+			<div class="footer">
+				<div class="social footer__social">
+					<a class="social__link-vk">
+						<span class="link-vk__icon"></span>
+					</a>
+					<a class="social__link-fc">
+						<span class="link-fc__icon"></span>
+					</a>
+					<a class="social__link-ins">
+						<span class="link-ins__icon"></span>
+					</a>
+				</div>
+				<div class="footer__content">
+					<h2 class="footer__title">Давайте дружить, это выгодно!</h2>
+					<p class="footer__text">Скидка 10% для друзей из социальных сетей.</p>
+				</div>
+			</div>
+		</div>
+	</footer>
+</body>
+
+</html>
