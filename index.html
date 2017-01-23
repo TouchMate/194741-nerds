@@ -6,8 +6,8 @@
 	<title>HTML Academy: Нёрдс</title>
 </head>
 
-<body class="index-page">
-	<header class="header index-page__header">
+<body>
+	<header class="header">
 		<div class="container">
 			<div class="header-menu menu">
 				<div class="menu__logo logo">
@@ -36,8 +36,10 @@
 				</div>
 			</div>
 		</div>
-		<div class="container">
-			<div class="header-slider slider">
+	</header>
+	<main>
+		<div class="slider">
+			<div class="container">
 				<div class="slides">
 					<div class="slider-controls">
 					</div>
@@ -68,76 +70,90 @@
 				</div>
 			</div>
 		</div>
-	</header>
-	<main class="index-page__main">
-		<div class="container">
-			<div class="features">
-				<div class="features__item">
-					<img class="features__img" width="300px" height="146px">
-					<h2 class="features__title">Веб-Сайты</h2>
-					<p class="features__text">Мир никогда не будет прежним после того как увидит ваш сайт!</p>
-					<a class="btn features__btn" href="#"></a>
+		<div class="services">
+			<div class="container">
+				<div class="services__item">
+					<figure class="service__image-box">
+						<img class="services__img" width="300px" height="146px">
+					</figure>
+					<h2 class="services__title">Веб-Сайты</h2>
+					<p class="services__text">Мир никогда не будет прежним после того как увидит ваш сайт!</p>
+					<a class="btn services__btn" href="#"></a>
 				</div>
-				<div class="features__item">
-					<img class="features__img" width="300px" height="146px">
-					<h2 class="features__title">Приложения</h2>
-					<p class="features__text">Покорите топ-10 приложений в AppStore и Google Play</p>
-					<a class="btn features__btn" href="#"></a>
+				<div class="services__item">
+					<figure class="service__image-box">
+						<img class="services__img" width="300px" height="146px">
+					</figure>
+					<h2 class="services__title">Приложения</h2>
+					<p class="services__text">Покорите топ-10 приложений в AppStore и Google Play</p>
+					<a class="btn services__btn" href="#"></a>
 				</div>
-				<div class="features__item">
-					<img class="features__img" width="300px" height="146px">
-					<h2 class="features__title">Презентации</h2>
-					<p class="features__text">Вы даже не подозреваете, насколько вы изумительны!</p>
-					<a class="btn features__btn" href="#"></a>
+				<div class="services__item">
+					<figure class="service__image-box">
+						<img class="services__img" width="300px" height="146px">
+					</figure>
+					<h2 class="services__title">Презентации</h2>
+					<p class="services__text">Вы даже не подозреваете, насколько вы изумительны!</p>
+					<a class="btn services__btn" href="#"></a>
 				</div>
 			</div>
 		</div>
-		<div class="container">
-			<div class="about">
-				<div class="about-content about-context_left">
-					<h2 class="about__title">Мы — маленькая, но гордая
+		<div class="about">
+			<div class="container">
+				<div class="about-desc">
+					<h2 class="about-desc__title">Мы — маленькая, но гордая
 											дизайн-студия из Краснодара.</h2>
-					<p class="about__text">Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не покладая рук, как роботы.</p>
-					<p class="about__work-order">Выполняем заказы на разработку:</p>
-					<ul class="about__work-menu">
-						<li class="about__work-item">Веб-сайтов любой сложности</li>
-						<li class="about__work-item">Мобильных приложений для iOS и Android</li>
-						<li class="about__work-item">Слайдшоу и видео для корпоративных презентаций</li>
+					<p class="about-desc__text">Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не покладая рук, как роботы.</p>
+					<p class="about-desc__list-title">Выполняем заказы на разработку:</p>
+					<ul class="about-desc__list">
+						<li class="about-desc__item">Веб-сайтов любой сложности</li>
+						<li class="about-desc__item">Мобильных приложений для iOS и Android</li>
+						<li class="about-desc__item">Слайдшоу и видео для корпоративных презентаций</li>
 					</ul>
 				</div>
-				<div class="about-visual about-visual_rigth">
-					<img class="logo-confetti about-visual-img" width="360px" height="208px">
-					<p class="about-visial__content">с 2004 года Любим точность во всем:</p>
-					<ul class="about-visial__points">
-						<li class="about-visial__item">
-							<span class="about-visial__item-number">146%</span> Уровень самоотдачи
+				<div class="about-stat">
+					<img class="logo-confetti" width="360px" height="208px">
+					<p class="about-stat__list-title">с 2004 года Любим точность во всем:</p>
+					<ul class="about-stat__list">
+						<li class="about-stat__item">
+							<span class="about-stat__item-number">146%</span> Уровень самоотдачи
 						</li>
-						<li class="about-visial__item">
-							<span class="about-visial__item-number">100%</span> Соблюдение сроков
+						<li class="about-stat__item">
+							<span class="about-stat__item-number">100%</span> Соблюдение сроков
 						</li>
-						<li class="about-visial__item">
-							<span class="about-visial__item-number">50%</span>Минимальная предоплата
+						<li class="about-stat__item">
+							<span class="about-stat__item-number">50%</span>Минимальная предоплата
 						</li>
 					</ul>
 				</div>
 			</div>
 		</div>
-		<div class="container">
-			<div class="porfolio">
+		<div class="porfolio">
+			<div class="container">
 				<div class="porfolio__item">
-					<img class="porfolio__icon">
+					<figure class="porfolio__pic-box">
+						<img class="porfolio__pic">
+					</figure>
 				</div>
 				<div class="porfolio__item">
-					<img class="porfolio__icon">
+					<figure class="porfolio__pic-box">
+						<img class="porfolio__pic">
+					</figure>
 				</div>
 				<div class="porfolio__item">
-					<img class="porfolio__icon">
+					<figure class="porfolio__pic-box">
+						<img class="porfolio__pic">
+					</figure>
 				</div>
 				<div class="porfolio__item">
-					<img class="porfolio__icon">
+					<figure class="porfolio__pic-box">
+						<img class="porfolio__pic">
+					</figure>
 				</div>
 			</div>
 		</div>
+	</main>
+	<footer class="footer">
 		<div class="map-block">
 			<div class="map"></div>
 			<div class="container">
@@ -152,24 +168,19 @@
 				</div>
 			</div>
 		</div>
-	</main>
-	<footer class="index-page_footer">
-		<div class="fcontainer">
-			<div class="footer">
-				<div class="social footer__social">
+		<div class="container">
+			<div class="footer-promo">
+				<div class="social footer-promo__social">
 					<a class="social__link-vk">
-						<span class="link-vk__icon"></span>
 					</a>
 					<a class="social__link-fc">
-						<span class="link-fc__icon"></span>
 					</a>
 					<a class="social__link-ins">
-						<span class="link-ins__icon"></span>
 					</a>
 				</div>
-				<div class="footer__content">
-					<h2 class="footer__title">Давайте дружить, это выгодно!</h2>
-					<p class="footer__text">Скидка 10% для друзей из социальных сетей.</p>
+				<div class="footer-promo__content">
+					<h2 class="footer-promo__title">Давайте дружить, это выгодно!</h2>
+					<p class="footer-promo__text">Скидка 10% для друзей из социальных сетей.</p>
 				</div>
 			</div>
 		</div>
