@@ -57,34 +57,34 @@
 							<div class="toggle catalog-filter__toggle_max"></div>
 						</div>
 						<div class="catalog-filter__number-controls">
-							<input class="catalog-filter__controls-price catalog-filter__controls-price_min" type="number" name="price" value="0">
-							<input class="catalog-filter__controls-price catalog-filter__controls-price_max" type="number" name="price" value="15 000">
+							<input class="catalog-filter__controls-price catalog-filter__controls-price_min" type="number" name="price-min" value="0">
+							<input class="catalog-filter__controls-price catalog-filter__controls-price_max" type="number" name="price-max" value="15 000">
 						</div>
 						<fieldset class="catalog-filter__type">
 							<legend class="catalog-filter-type__title">Сетка:</legend>
-							<input class="catalog-filter-type__input" type="radio" name="type" id="adaptive" checked>
+							<input class="catalog-filter-type__input" type="radio" name="type-adaptive" id="adaptive" checked>
 							<label class="catalog-filter-type__label" for="adaptive">Адаптивная</label>
-							<input class="catalog-filter-type__input" type="radio" name="type" id="fixed">
+							<input class="catalog-filter-type__input" type="radio" name="type-fixed" id="fixed">
 							<label class="catalog-filter-type__label" for="fixed">Фиксированная</label>
-							<input class="catalog-filter-type__input" type="radio" name="type" id="flexible">
+							<input class="catalog-filter-type__input" type="radio" name="type-flexible" id="flexible">
 							<label class="catalog-filter-type__label" for="flexible">Резиновая</label>
 						</fieldset>
 						<fieldset class="catalog-filter__properties">
 							<legend class="catalog-filter-properties__title">Особенности:</legend>
-							<input class="catalog-filter-properties__input" type="checkbox" name="property" id="slider" checked>
+							<input class="catalog-filter-properties__input" type="checkbox" name="property-slider" id="slider" checked>
 							<label class="catalog-filter-properties__label" for="slider">Слайдер
 							</label>
-							<input class="catalog-filter-properties__input" type="checkbox" name="property" id="block-features" checked>
+							<input class="catalog-filter-properties__input" type="checkbox" name="property-features" id="block-features" checked>
 							<label class="catalog-filter-properties__label" for="block-features">
 								Блок преимуществ</label>
-							<input class="catalog-filter-properties__input" type="checkbox" name="property" id="news">
+							<input class="catalog-filter-properties__input" type="checkbox" name="property-news" id="news">
 							<label class="catalog-filter-properties__label" for="news">
 								Новости</label>
-							<input class="catalog-filter-properties__input" type="checkbox" name="property" id="gallery">
+							<input class="catalog-filter-properties__input" type="checkbox" name="property-gallery" id="gallery">
 							<label class="catalog-filter-properties__label" for="gallery">
 								Галерея
 							</label>
-							<input class="catalog-filter-properties__input" type="checkbox" name="property" id="bucket">
+							<input class="catalog-filter-properties__input" type="checkbox" name="property-bucket" id="bucket">
 							<label class="catalog-properties__label" for="bucket">
 								Корзина</label>
 						</fieldset>
@@ -104,86 +104,84 @@
 							<li class="view-sorting__item">
 								<a class="view-sorting__link">По названию</a>
 							</li>
-							<li class="view-sorting__item">
-								<a class="view-sorting__link sorting__link_arrow">
-									<span class="view-sorting__icon sorting__icon_up"></span>
-								</a>
-							</li>
-							<li class="view-sorting__item">
-								<a class="view-sorting__link sorting__link_arrow">
-									<span class="view-sorting__icon sorting__icon_up"></span>
-								</a>
-							</li>
+						</ul>
+						<div class="view-sorting__type">
+							<a class="view-sorting__link sorting__link_arrow">
+								<span class="view-sorting__icon sorting__icon_up"></span>
+							</a>
+							<a class="view-sorting__link sorting__link_arrow">
+								<span class="view-sorting__icon sorting__icon_up"></span>
+							</a>
+						</div>
+						<div class="catalog-view__projects">
+							<div class="projects-item">
+								<div class="projects-item__frame">
+								</div>
+								<img class="projects-item__img" width="360px" height="576px">
+								<div class="projects-item__action">
+									<h3 class="action__title">Sedona</h3>
+									<p class="action__text">Информационный сайт для туристов</p>
+									<a class="btn action__btn">9 900 <span>РУБ.</span></a>
+								</div>
+							</div>
+							<div class="projects-item">
+								<div class="projects-item__frame">
+								</div>
+								<img class="projects-item__img" width="360px" height="576px">
+								<div class="projects-item__action">
+									<h3 class="action__title">Pink App</h3>
+									<p class="action__text">Продуктовый лендинг приложения для iOS и Android</p>
+									<a class="btn action__btn">9 900 <span>РУБ.</span></a>
+								</div>
+							</div>
+							<div class="projects-item">
+								<div class="projects-item__frame">
+								</div>
+								<img class="projects-item__img" width="360px" height="576px">
+								<div class="projects-item__action">
+									<h3 class="action__title">Barbershop</h3>
+									<p class="action__text">Сайт салоны красоты. Для мужчин, да.</p>
+									<a class="btn action__btn">9 900 <span>РУБ.</span></a>
+								</div>
+							</div>
+							<div class="projects-item">
+								<div class="projects-item__frame">
+								</div>
+								<img class="projects-item__img" width="360px" height="576px">
+								<div class="projects-item__action">
+									<h3 class="action__title">Mishka</h3>
+									<p class="action__text">Интернет-магазин вязаных игрушек</p>
+									<a class="btn action__btn">9 900 <span>РУБ.</span></a>
+								</div>
+							</div>
+							<div class="projects-item">
+								<div class="projects-item__frame">
+								</div>
+								<img class="projects-item__img" width="360px" height="576px">
+								<div class="projects-item__action">
+									<h3 class="action__title">A plus</h3>
+									<p class="action__text">Лендинг курсов повышения квалификации</p>
+									<a class="btn action__btn">9 900 <span>РУБ.</span></a>
+								</div>
+							</div>
+							<div class="projects-item">
+								<div class="projects-item__frame">
+								</div>
+								<img class="projects-item__img" width="360px" height="576px">
+								<div class="projects-item__action">
+									<h3 class="action__title">Квас</h3>
+									<p class="action__text">Промо-сайт производителя крафтового кваса</p>
+									<a class="btn action__btn">9 900 <span>РУБ.</span></a>
+								</div>
+							</div>
+						</div>
+						<ul class="pagination">
+							<li class="pagination__item"><a class="pagination__link pagination__link_active" href="#">1</a></li>
+							<li class="pagination__item"><a class="pagination__link" href="#">2</a></li>
+							<li class="pagination__item"><a class="pagination__link" href="#">3</a></li>
+							<li class="pagination__item"><a class="pagination__link pagination__link_next" href="#">Следующая</a></li>
 						</ul>
 					</div>
-					<div class="catalog-view__projects">
-						<div class="projects-item">
-							<div class="projects-item__frame">
-							</div>
-							<img class="projects-item__img" width="360px" height="576px">
-							<div class="projects-item__action">
-								<h3 class="action__title">Sedona</h3>
-								<p class="action__text">Информационный сайт для туристов</p>
-								<a class="btn action__btn">9 900 <span>РУБ.</span></a>
-							</div>
-						</div>
-						<div class="projects-item">
-							<div class="projects-item__frame">
-							</div>
-							<img class="projects-item__img" width="360px" height="576px">
-							<div class="projects-item__action">
-								<h3 class="action__title">Pink App</h3>
-								<p class="action__text">Продуктовый лендинг приложения для iOS и Android</p>
-								<a class="btn action__btn">9 900 <span>РУБ.</span></a>
-							</div>
-						</div>
-						<div class="projects-item">
-							<div class="projects-item__frame">
-							</div>
-							<img class="projects-item__img" width="360px" height="576px">
-							<div class="projects-item__action">
-								<h3 class="action__title">Barbershop</h3>
-								<p class="action__text">Сайт салоны красоты. Для мужчин, да.</p>
-								<a class="btn action__btn">9 900 <span>РУБ.</span></a>
-							</div>
-						</div>
-						<div class="projects-item">
-							<div class="projects-item__frame">
-							</div>
-							<img class="projects-item__img" width="360px" height="576px">
-							<div class="projects-item__action">
-								<h3 class="action__title">Mishka</h3>
-								<p class="action__text">Интернет-магазин вязаных игрушек</p>
-								<a class="btn action__btn">9 900 <span>РУБ.</span></a>
-							</div>
-						</div>
-						<div class="projects-item">
-							<div class="projects-item__frame">
-							</div>
-							<img class="projects-item__img" width="360px" height="576px">
-							<div class="projects-item__action">
-								<h3 class="action__title">A plus</h3>
-								<p class="action__text">Лендинг курсов повышения квалификации</p>
-								<a class="btn action__btn">9 900 <span>РУБ.</span></a>
-							</div>
-						</div>
-						<div class="projects-item">
-							<div class="projects-item__frame">
-							</div>
-							<img class="projects-item__img" width="360px" height="576px">
-							<div class="projects-item__action">
-								<h3 class="action__title">Квас</h3>
-								<p class="action__text">Промо-сайт производителя крафтового кваса</p>
-								<a class="btn action__btn">9 900 <span>РУБ.</span></a>
-							</div>
-						</div>
-					</div>
-					<ul class="pagination catalog-view__pagination">
-						<li class="pagination__item"><a class="pagination__link pagination__link_active" href="#">1</a></li>
-						<li class="pagination__item"><a class="pagination__link" href="#">2</a></li>
-						<li class="pagination__item"><a class="pagination__link" href="#">3</a></li>
-						<li class="pagination__item"><a class="pagination__link pagination__link_next" href="#">Следующая</a></li>
-					</ul>
 				</div>
 			</div>
 		</div>
