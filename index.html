@@ -3,16 +3,18 @@
 
 <head>
 	<meta charset="utf-8">
+	<link rel="stylesheet" href="css/normalize.css">
 	<link href="css/style.css" rel="stylesheet">
+
 	<title>HTML Academy: Нёрдс</title>
 </head>
 
 <body>
 	<header class="header">
 		<div class="container">
-			<div class="header-menu menu">
+			<div class="header-menu menu clearfix">
 				<div class="menu__logo logo">
-					<img class="logo__img" src="img/logo-nerds.png" width="160px" heigth="65px" alt="нёрдс-лого">
+					<img class="logo-nerds__img" src="img/logo-nerds.png" width="160px" heigth="65px" alt="нёрдс-лого">
 				</div>
 				<div class="menu-nav">
 					<ul class="nav">
@@ -39,33 +41,44 @@
 		</div>
 	</header>
 	<main>
-		<div class="slider">
+		<div class="slider-section">
 			<div class="container">
-				<div class="slides">
+				<div class="slider">
+					<input class="slider__radio-btn" type="radio" id="btn-1" name="toggle" checked>
+					<input class="slider__radio-btn" type="radio" id="btn-2" name="toggle">
+					<input class="slider__radio-btn" type="radio" id="btn-3" name="toggle">
 					<div class="slider-controls">
+						<label class="slider-controls__toggle" for="btn-1"></label>
+						<label class="slider-controls__toggle" for="btn-2"></label>
+						<label class="slider-controls__toggle" for="btn-3"></label>
 					</div>
-					<div class="slide">
-						<div class="slide-content">
-							<div class="slide__title">Долго, дорого, скрупулезно.
+					<div class="slides">
+						<div class="slide">
+							<div class="slide__text">
+								<div class="slide__title">Долго, дорого,
+									<br>скрупулезно</div>
+								<p class="slide__content">Математически выверенный дизайн
+									<br>для вашего сайта или мобильного приложения.</p>
+								<a class="btn slide__btn" href="#">Узнать больше</a>
 							</div>
-							<p class="slide__text">Математически выверенный дизайн для вашего сайта или мобильного приложения.</p>
-							<a class="btn slide__btn" href="#">Узнать больше</a> <img class="slide_image" src="img/slide1.png">
 						</div>
-					</div>
-					<div class="slide hidden">
-						<div class="slide-content">
-							<div class="slide__title">Любим математику как никто другой
+						<div class="slide">
+							<div class="slide__text">
+								<div class="slide__title">Любим математику
+									<br>как никто другой</div>
+								<p class="slide__content">Никакого креатива, только математические формулы
+									<br>для расчета идеальных пропорций.</p>
+								<a class="btn slide__btn" href="#">Узнать больше</a>
 							</div>
-							<p class="slide__text">Никакого креатива, только математические формулы для расчета идеальных пропорций.</p>
-							<a class="btn slide__btn" href="#">Узнать больше</a> <img class="slide_image" src="img/slide2.png">
 						</div>
-					</div>
-					<div class="slide hidden">
-						<div class="slide-content">
-							<div class="slide__title">Только ночь, только хардкор
+						<div class="slide">
+							<div class="slide__text">
+								<div class="slide__title">Только ночь,
+									<br>только хардкор</div>
+								<p class="slide__content">Работать днем, как все? Мы против этого.
+									<br>Ближе к полуночи работа только начинается.</p>
+								<a class="btn slide__btn" href="#">Узнать больше</a>
 							</div>
-							<p class="slide__text">Работать днем, как все? Мы против этого. Ближе к полуночи работа только начинается.</p>
-							<a class="btn slide__btn" href="#">Узнать больше</a> <img class="slide_image" src="img/slide3.png">
 						</div>
 					</div>
 				</div>
@@ -73,146 +86,156 @@
 		</div>
 		<div class="services">
 			<div class="container">
-				<div class="services__item">
-					<figure class="service__image-box">
-						<img class="services__img" width="300px" height="146px">
-					</figure>
-					<h2 class="services__title">Веб-Сайты</h2>
-					<p class="services__text">Мир никогда не будет прежним после того как увидит ваш сайт!</p>
-					<a class="btn services__btn" href="#"></a>
-				</div>
-				<div class="services__item">
-					<figure class="service__image-box">
-						<img class="services__img" width="300px" height="146px">
-					</figure>
-					<h2 class="services__title">Приложения</h2>
-					<p class="services__text">Покорите топ-10 приложений в AppStore и Google Play</p>
-					<a class="btn services__btn" href="#"></a>
-				</div>
-				<div class="services__item">
-					<figure class="service__image-box">
-						<img class="services__img" width="300px" height="146px">
-					</figure>
-					<h2 class="services__title">Презентации</h2>
-					<p class="services__text">Вы даже не подозреваете, насколько вы изумительны!</p>
-					<a class="btn services__btn" href="#"></a>
+				<div class="services__container clearfix">
+					<div class="services__item">
+						<figure class="service__image-box">
+							<img class="services__img" src="img/illustration-1.png" width="300px" height="146px">
+						</figure>
+						<h2 class="services__title ">Веб-Сайты</h2>
+						<p class="services__text ">Мир никогда не будет прежним после того как увидит ваш сайт!</p>
+						<a class="btn services__btn services__btn_color-red" href="#">Заказать</a>
+					</div>
+					<div class="services__item ">
+						<figure class="service__image-box ">
+							<img class="services__img " src="img/illustration-2.png" width="300px" height="146px ">
+						</figure>
+						<h2 class="services__title ">Приложения</h2>
+						<p class="services__text ">Покорите топ-10 приложений в AppStore и Google Play</p>
+						<a class="btn services__btn services__btn_color-green" href="#">Заказать</a>
+					</div>
+					<div class="services__item service__item_last">
+						<figure class="service__image-box">
+							<img class="services__img " src="img/illustration-3.png" width="300px" height="146px ">
+						</figure>
+						<h2 class="services__title ">Презентации</h2>
+						<p class="services__text ">Вы даже не подозреваете, насколько вы изумительны!</p>
+						<a class="btn services__btn services__btn_color-yellow" href="#">Заказать</a>
+					</div>
 				</div>
 			</div>
 		</div>
 		<div class="about">
 			<div class="container">
-				<div class="about-desc">
-					<h2 class="about-desc__title">Мы — маленькая, но гордая
+				<div class="about__container clearfix">
+					<div class="about-desc ">
+						<h2 class="about-desc__title">Мы — маленькая, но гордая
 											дизайн-студия из Краснодара.</h2>
-					<p class="about-desc__text">Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не покладая рук, как роботы.</p>
-					<p class="about-desc__list-title">Выполняем заказы на разработку:</p>
-					<ul class="about-desc__list">
-						<li class="about-desc__item">Веб-сайтов любой сложности</li>
-						<li class="about-desc__item">Мобильных приложений для iOS и Android</li>
-						<li class="about-desc__item">Слайдшоу и видео для корпоративных презентаций</li>
-					</ul>
-				</div>
-				<div class="about-stat">
-					<img class="logo-confetti" width="360px" height="208px">
-					<p class="about-stat__list-title">с 2004 года Любим точность во всем:</p>
-					<ul class="about-stat__list">
-						<li class="about-stat__item">
-							<span class="about-stat__item-number">146%</span> Уровень самоотдачи
-						</li>
-						<li class="about-stat__item">
-							<span class="about-stat__item-number">100%</span> Соблюдение сроков
-						</li>
-						<li class="about-stat__item">
-							<span class="about-stat__item-number">50%</span>Минимальная предоплата
-						</li>
-					</ul>
+						<p class="about-desc__text ">Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не покладая рук, как роботы.</p>
+						<p class="about-desc__list-title">Выполняем заказы на разработку:</p>
+						<ul class="about-desc__list ">
+							<li class="about-desc__item">Веб-сайтов любой сложности</li>
+							<li class="about-desc__item">Мобильных приложений для iOS и Android</li>
+							<li class="about-desc__item">Слайдшоу и видео для корпоративных презентаций</li>
+						</ul>
+					</div>
+					<div class="about-stat">
+						<img class="logo-confetti about-stat__logo" src="img/logo-nerds-confetti.png" width="360px" height="208px ">
+						<p class="about-stat__list-title">с 2004 года Любим точность во всем:</p>
+						<ul class="about-stat__list ">
+							<li class="about-stat__item ">
+								<span class="about-stat__item-number">146%</span> Уровень самоотдачи
+							</li>
+							<li class="about-stat__item ">
+								<span class="about-stat__item-number ">100%</span> Соблюдение сроков
+							</li>
+							<li class="about-stat__item ">
+								<span class="about-stat__item-number ">50%</span> Минимальная предоплата
+							</li>
+						</ul>
+					</div>
 				</div>
 			</div>
 		</div>
 		<div class="porfolio">
 			<div class="container">
-				<div class="porfolio__item">
-					<a class="porfolio__link">
-						<figure class="porfolio__pic-box">
-							<img class="porfolio__pic">
-						</figure>
-					</a>
-				</div>
-				<div class="porfolio__item">
-					<a class="porfolio__link">
-						<figure class="porfolio__pic-box">
-							<img class="porfolio__pic">
-						</figure>
-					</a>
-				</div>
-				<div class="porfolio__item">
-					<a class="porfolio__link">
-						<figure class="porfolio__pic-box">
-							<img class="porfolio__pic">
-						</figure>
-					</a>
-				</div>
-				<div class="porfolio__item">
-					<a class="porfolio__link">
-						<figure class="porfolio__pic-box">
-							<img class="porfolio__pic">
-						</figure>
-					</a>
+				<div class="pofrolio__container">
+					<div class="porfolio__item">
+						<a class="porfolio__link">
+							<figure class="porfolio__pic-box">
+								<img class="porfolio__pic" src="img/portfolio-academy.png">
+							</figure>
+						</a>
+					</div>
+					<div class="porfolio__item">
+						<a class="porfolio__link">
+							<figure class="porfolio__pic-box">
+								<img class="porfolio__pic" src="img/portfolio-borodinski.png">
+							</figure>
+						</a>
+					</div>
+					<div class="porfolio__item">
+						<a class="porfolio__link">
+							<figure class="porfolio__pic-box">
+								<img class="porfolio__pic" src="img/portfolio-pink.png">
+							</figure>
+						</a>
+					</div>
+					<div class="porfolio__item ">
+						<a class="porfolio__link ">
+							<figure class="porfolio__pic-box ">
+								<img class="porfolio__pic" src="img/portfolio-mishka.png">
+							</figure>
+						</a>
+					</div>
 				</div>
 			</div>
 		</div>
 	</main>
-	<footer class="footer">
-		<div class="map-block">
-			<div class="map"></div>
-			<div class="container">
-				<div class="map-content address">
-					<h2 class="address__title">NЁRDS DESIGN STUDIO</h2>
-					<address class="address__text">
-						<p class="adress__street">191186, Санкт-Петербург, 
+	<footer class="footer ">
+		<div class="map-block ">
+			<div class="map "></div>
+			<div class="container ">
+				<div class="map-content address ">
+					<h2 class="address__title ">NЁRDS DESIGN STUDIO</h2>
+					<address class="address__text ">
+						<p class="adress__street ">191186, Санкт-Петербург, 
 							ул. Б. Конюшенная, д. 19/8</p>
-						<p class="address__phone-number">тел. +7 (812) 275-75-75</p>
+						<p class="address__phone-number ">тел. +7 (812) 275-75-75</p>
 					</address>
-					<a class="btn address__btn" href="#"></a>
+					<a class="btn address__btn" href="# ">Напишите нам</a>
 				</div>
 			</div>
 		</div>
-		<div class="container">
-			<div class="footer-promo">
+		<div class="container ">
+			<div class="footer-promo clearfix">
 				<div class="social footer-promo__social">
-					<a class="social__link-vk">
+					<a class=" social__link social__link-vk ">
 					</a>
-					<a class="social__link-fc">
+					<a class="social__link social__link-fc ">
 					</a>
-					<a class="social__link-ins">
+					<a class="social__link social__link-ins ">
 					</a>
 				</div>
-				<div class="footer-promo__content">
-					<h2 class="footer-promo__title">Давайте дружить, это выгодно!</h2>
-					<p class="footer-promo__text">Скидка 10% для друзей из социальных сетей.</p>
+				<div class="footer-promo__content ">
+					<h2 class="footer-promo__title ">Давайте дружить, это выгодно!</h2>
+					<p class="footer-promo__text ">Скидка 10% для друзей из социальных сетей.</p>
 				</div>
 			</div>
 		</div>
 	</footer>
-	<div class="modal-content">
-		<button class="modal-content__close" type="button" title="Закрыть">
+	<div class="modal-content ">
+		<button class="modal-content__close " type="button " title="Закрыть ">
 			Закрыть
 		</button>
-		<form class="mail-form" action="#" method="post">
-			<div class="mail-form-container">
-				<div class="mail-form__title">Напишите нам</div>
-				<div class="mail-form__input-box">
-					<label class="mail-form__label-name" for="field-name">Ваше имя:</label>
-					<input class="mail-form__input-name" name="full-name" type="text" id="field-name" value="Представьтесь, пожалуйста">
-					<label class="mail-form__label-name" for="field-name">Ваш e-mail:</label>
-					<input class="mail-form__input-email" name="email" type="email" id="field-email" value="Для отправки ответа">
+		<form class="mail-form " action="# " method="post ">
+			<div class="mail-form-container ">
+				<div class="mail-form__title ">Напишите нам</div>
+				<div class="mail-form__input-boxes clearfix">
+					<div class="mail-form__input-box1">
+						<label class="mail-form__label-name " for="field-name ">Ваше имя:</label>
+						<input class="mail-form__input-name " name="full-name " type="text " id="field-name " value="Представьтесь, пожалуйста ">
+					</div>
+					<div class="mail-form__input-box2">
+						<label class="mail-form__label-name " for="field-name ">Ваш e-mail:</label>
+						<input class="mail-form__input-email " name="email " type="email " id="field-email " value="Для отправки ответа ">
+					</div>
 				</div>
-				<div class="mail-form__text-box">
-					<label class="mail-form__label-textarea" for="field-textarea">Текст письма:</label>
-					<textarea class="mail-form__textarea" name="message" id="field-textarea" rows="30" cols="10">В свободной форме</textarea>
+				<div class="mail-form__text-box ">
+					<label class="mail-form__label-textarea " for="field-textarea ">Текст письма:</label>
+					<textarea class="mail-form__textarea " name="message " id="field-textarea ">В свободной форме</textarea>
 				</div>
 			</div>
-			<button class="btn mail-form__btn" type="submit">Отправить</button>
+			<button class="btn mail-form__btn " type="submit ">Отправить</button>
 		</form>
 	</div>
 </body>
