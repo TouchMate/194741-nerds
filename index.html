@@ -3,10 +3,10 @@
 
 <head>
 	<meta charset="utf-8">
+	<title>HTML Academy: Нёрдс</title>
+	<link href="https://fonts.googleapis.com/css?family=Roboto:400,700&amp;subset=cyrillic" rel="stylesheet">
 	<link rel="stylesheet" href="css/normalize.css">
 	<link href="css/style.css" rel="stylesheet">
-
-	<title>HTML Academy: Нёрдс</title>
 </head>
 
 <body>
@@ -14,7 +14,7 @@
 		<div class="container">
 			<div class="header-menu menu clearfix">
 				<div class="menu__logo logo">
-					<img class="logo-nerds__img" src="img/logo-nerds.png" width="160" heigth="65" alt="нёрдс-лого">
+					<img class="logo-nerds__img" src="img/logo-nerds.png" width="160" height="65" alt="нёрдс-лого">
 				</div>
 				<div class="menu-nav">
 					<ul class="nav">
@@ -25,7 +25,7 @@
 							<a class="nav__link" href="#">Клиенты</a>
 						</li>
 						<li class="nav__item">
-							<a class="nav__link" href="#">Магазин</a>
+							<a class="nav__link" href="catalog.html">Магазин</a>
 						</li>
 						<li class="nav__item">
 							<a class="nav__link" href="#">Контакты</a>
@@ -89,7 +89,7 @@
 				<div class="services__list clearfix">
 					<div class="services__item">
 						<figure class="service__image-box">
-							<img class="services__img" src="img/illustration-1.png" width="300" height="146">
+							<img class="services__img" src="img/illustration-1.png" width="300" height="146" alt="Веб-Сайт">
 						</figure>
 						<h2 class="services__title">Веб-Сайты</h2>
 						<p class="services__text">Мир никогда не будет прежним после того как увидит ваш сайт!</p>
@@ -97,7 +97,7 @@
 					</div>
 					<div class="services__item">
 						<figure class="service__image-box">
-							<img class="services__img" src="img/illustration-2.png" width="300" height="146">
+							<img class="services__img" src="img/illustration-2.png" width="300" height="146" alt="Приложения">
 						</figure>
 						<h2 class="services__title">Приложения</h2>
 						<p class="services__text">Покорите топ-10 приложений в AppStore и Google Play</p>
@@ -105,7 +105,7 @@
 					</div>
 					<div class="services__item service__item_last">
 						<figure class="service__image-box">
-							<img class="services__img" src="img/illustration-3.png" width="300" height="146">
+							<img class="services__img" src="img/illustration-3.png" width="300" height="146" alt="Приложения">
 						</figure>
 						<h2 class="services__title">Презентации</h2>
 						<p class="services__text">Вы даже не подозреваете, насколько вы изумительны!</p>
@@ -129,17 +129,17 @@
 						</ul>
 					</div>
 					<div class="about-stat">
-						<img class="logo-confetti about-stat__logo" src="img/logo-nerds-confetti.png" width="360" height="208">
+						<img class="logo-confetti about-stat__logo" src="img/logo-nerds-confetti.png" width="360" height="208" alt="Лого-Нёрдс">
 						<p class="about-stat__list-title">с 2004 года Любим точность во всем:</p>
 						<ul class="about-stat__list">
 							<li class="about-stat__item">
-								<span class="about-stat__item-number">146%</span> Уровень самоотдачи
+								<span class="about-stat__item-number">146<span class="persents">%</span></span>Уровень самоотдачи
 							</li>
 							<li class="about-stat__item">
-								<span class="about-stat__item-number">100%</span> Соблюдение сроков
+								<span class="about-stat__item-number">100<span class="persents">%</span></span>Соблюдение сроков
 							</li>
 							<li class="about-stat__item">
-								<span class="about-stat__item-number">50%</span> Минимальная предоплата
+								<span class="about-stat__item-number">50<span class="persents">%</span></span>Минимальная предоплата
 							</li>
 						</ul>
 					</div>
@@ -181,29 +181,84 @@
 			</div>
 		</div>
 	</main>
-	<div class="modal-content">
-		<button class="modal-content__close " type="button" title="Закрыть ">
-			Закрыть
-		</button>
-		<form class="mail-form" action="#" method="post">
-			<div class="mail-form-container">
-				<div class="mail-form__title">Напишите нам</div>
-				<div class="mail-form__input-boxes clearfix">
-					<div class="mail-form__input-box1">
-						<label class="mail-form__label-name" for="field-name">Ваше имя:</label>
-						<input class="mail-form__input-name" name="full-name" type="text" id="field-name" value="Представьтесь, пожалуйста">
+	<footer class="footer">
+		<div class="map-block">
+			<div class="container">
+				<div class="map-content address ">
+					<h2 class="address__title ">NЁRDS DESIGN STUDIO</h2>
+					<div class="address__text ">
+						<p class="adress__street ">191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+						<p class="address__phone-number ">тел. +7 (812) 275-75-75</p>
 					</div>
-					<div class="mail-form__input-box2">
-						<label class="mail-form__label-name" for="field-email">Ваш e-mail:</label>
-						<input class="mail-form__input-email" name="email" type="email" id="field-email" value="Для отправки ответа">
-					</div>
-				</div>
-				<div class="mail-form__text-box">
-					<label class="mail-form__label-textarea" for="field-textarea">Текст письма:</label>
-					<textarea class="mail-form__textarea" name="message" id="field-textarea">В свободной форме</textarea>
+					<a class="btn address__btn " href="# ">Напишите нам</a>
 				</div>
 			</div>
-			<button class="btn mail-form__btn" type="submit">Отправить</button>
+			<div class="map" id="map-canvas"></div>
+			<script>
+				var map;
+
+				function initMap() {
+					var map = new google.maps.Map(document.getElementById('map-canvas'), {
+						center: {
+							lat: 59.9388232,
+							lng: 30.320875
+						},
+						zoom: 17
+					});
+					var marker = new google.maps.Marker({
+						position: {
+							lat: 59.9386832,
+							lng: 30.3238000
+						},
+						map: map,
+						tile: "hello",
+						icon: "../img/map-marker.png",
+					});
+				}
+			</script>
+			<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBo-LF2wOnOns5dOAXYeTaY1v6vl3DdLJY&callback=initMap" async defer></script>
+
+		</div>
+		<div class="container ">
+			<div class="footer-promo clearfix ">
+				<div class="social footer-promo__social ">
+					<a class="social__link social__link-vk ">
+					</a>
+					<a class="social__link social__link-fb ">
+					</a>
+					<a class="social__link social__link-ins ">
+					</a>
+				</div>
+				<div class="footer-promo__content ">
+					<h2 class="footer-promo__title ">Давайте дружить, это выгодно!</h2>
+					<p class="footer-promo__text ">Скидка 10% для друзей из социальных сетей.</p>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<div class="modal-content ">
+		<button class="modal-content__close " type="button " title="Закрыть ">
+			Закрыть
+		</button>
+		<form class="mail-form " action="# " method="post ">
+			<div class="mail-form-container ">
+				<div class="mail-form__title ">Напишите нам</div>
+				<div class="mail-form__input-boxes clearfix ">
+					<div class="mail-form__input-box1 ">
+						<label class="mail-form__label-name " for="field-name ">Ваше имя:</label>
+						<input class="mail-form__input-name " name="full-name " type="text " id="field-name " value="Представьтесь, пожалуйста ">
+					</div>
+					<div class="mail-form__input-box2 ">
+						<label class="mail-form__label-name " for="field-email ">Ваш e-mail:</label>
+						<input class="mail-form__input-email " name="email " type="email " id="field-email " value="Для отправки ответа ">
+					</div>
+				</div>
+				<div class="mail-form__text-box ">
+					<label class="mail-form__label-textarea " for="field-textarea ">Текст письма:</label>
+					<textarea class="mail-form__textarea " name="message " id="field-textarea ">В свободной форме</textarea>
+				</div>
+			</div>
+			<button class="btn mail-form__btn " type="submit ">Отправить</button>
 		</form>
 	</div>
 </body>

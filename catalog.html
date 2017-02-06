@@ -3,10 +3,10 @@
 
 <head>
 	<meta charset="utf-8">
+	<title>HTML Academy: Нёрдс Каталог</title>
+	<link href="https://fonts.googleapis.com/css?family=Roboto:400,700&amp;subset=cyrillic" rel="stylesheet">
 	<link rel="stylesheet" href="css/normalize.css">
 	<link href="css/style.css" rel="stylesheet">
-
-	<title>HTML Academy: Нёрдс Каталог</title>
 </head>
 
 <body>
@@ -14,8 +14,8 @@
 		<div class="container">
 			<div class="header-menu menu clearfix">
 				<div class="menu__logo logo">
-					<a class="logo__link" href="#">
-						<img class="logo-nerds__img" src="img/logo-nerds.png" width="160px" heigth="65px" alt="нёрдс-лого">
+					<a class="logo__link" href="index.html">
+						<img class="logo-nerds__img" src="img/logo-nerds.png" width="160" height="65" alt="нёрдс-лого">
 					</a>
 				</div>
 				<div class="menu-nav">
@@ -27,7 +27,7 @@
 							<a class="nav__link" href="#">Клиенты</a>
 						</li>
 						<li class="nav__item">
-							<a class="nav__link" href="#">Магазин</a>
+							<a class="nav__link nav__link_active" href="#">Магазин</a>
 						</li>
 						<li class="nav__item">
 							<a class="nav__link" href="#">Контакты</a>
@@ -52,7 +52,7 @@
 		</div>
 		<div class="catalog">
 			<div class="container clearfix">
-				<form class="catalog-filter" action="#" mathod="get">
+				<form class="catalog-filter" action="#" method="get">
 					<fieldset class="catalog-filter__price">
 						<legend class="catalog-filter__price-title">Стоимость:</legend>
 						<div class="catalog-filter__range-controls">
@@ -62,40 +62,40 @@
 							<div class="toggle catalog-filter__toggle_min"></div>
 							<div class="toggle catalog-filter__toggle_max"></div>
 						</div>
-						<div class="catalog-filter__number-controls clearfix">
+						<div class="catalog-filter__number-controls">
 							<label class="catalog-filter__label-price catalog-filter__label-price-min" for="field-price-min">От
-								<input class="catalog-filter__controls-price catalog-filter__controls-price_min" id="field-price-min" type="number" name="price-min" value="0">
+								<input class="catalog-filter__controls-price catalog-filter__controls-price_min" id="field-price-min" type="text" name="price-min" value="0">
 							</label>
-							<label class="catalog-filter__label-price catalog-filter__label-price-man" for="field-price-max">До
-								<input class="catalog-filter__controls-price catalog-filter__controls-price_max" id="field-prace-max" type="number" name="price-max" value="15000">
+							<label class="catalog-filter__label-price catalog-filter__label-price-max" for="field-price-max">До
+								<input class="catalog-filter__controls-price catalog-filter__controls-price_max" id="field-price-max" type="text" name="price-max" value="15 000">
 							</label>
 						</div>
 						<fieldset class="catalog-filter__type">
 							<legend class="catalog-filter-type__title">Сетка:</legend>
 							<input class="catalog-filter-type__input" type="radio" name="type-adaptive" id="adaptive" checked>
-							<label class="catalog-filter-type__label" for="adaptive">Адаптивная</label>
+							<label class="catalog-filter-type__label" for="adaptive" disabled>Адаптивная</label>
 							<input class="catalog-filter-type__input" type="radio" name="type-fixed" id="fixed">
 							<label class="catalog-filter-type__label" for="fixed">Фиксированная</label>
-							<input class="catalog-filter-type__input" type="radio" name="type-flexible" id="flexible">
-							<label class="catalog-filter-type__label" for=" flexible ">Резиновая</label>
+							<input class="catalog-filter-type__input" type="radio" name="type-flexible" id="rubber">
+							<label class="catalog-filter-type__label" for="rubber">Резиновая</label>
 						</fieldset>
 						<fieldset class="catalog-filter__properties">
 							<legend class="catalog-filter-properties__title">Особенности:</legend>
-							<input class="catalog-filter-properties__input" type="checkbox" name="property-slider " id="slider " checked>
+							<input class="catalog-filter-properties__input" type="checkbox" name="property-slider " id="slider" checked>
 							<label class="catalog-filter-properties__label" for="slider">Слайдер
 							</label>
 							<input class="catalog-filter-properties__input" type="checkbox" name="property-features " id="block-features" checked>
-							<label class="catalog-filter-properties__label" for="block-features ">
+							<label class="catalog-filter-properties__label" for="block-features">
 								Блок преимуществ</label>
-							<input class="catalog-filter-properties__input" type="checkbox" name="property-news " id="news ">
+							<input class="catalog-filter-properties__input" type="checkbox" name="property-news " id="news">
 							<label class="catalog-filter-properties__label" for="news">
 								Новости</label>
-							<input class="catalog-filter-properties__input" type="checkbox" name="property-gallery " id="gallery ">
+							<input class="catalog-filter-properties__input" type="checkbox" name="property-gallery" id="gallery">
 							<label class="catalog-filter-properties__label" for="gallery">
 								Галерея
 							</label>
-							<input class="catalog-filter-properties__input" type="checkbox" name="property-bucket " id="bucket ">
-							<label class="catalog-properties__label" for="bucket">
+							<input class="catalog-filter-properties__input" type="checkbox" name="property-bucket" id="bucket">
+							<label class="catalog-filter-properties__label" for="bucket">
 								Корзина</label>
 						</fieldset>
 						<a href="#" class="btn-submit catalog-filter__btn">Показать</a>
@@ -106,7 +106,7 @@
 						<h3 class="view-sorting__title">Сортировка:</h3>
 						<ul class="view-sorting__list">
 							<li class="view-sorting__item">
-								<a class="view-sorting__link">По цене</a>
+								<a class="view-sorting__link view-sorting__link_active">По цене</a>
 							</li>
 							<li class="view-sorting__item">
 								<a class="view-sorting__link">По типу</a>
@@ -116,23 +116,23 @@
 							</li>
 						</ul>
 						<div class="view-sorting__type">
-							<a class="view-sorting__type-link view-sorting__link-arrow_down">
+							<a class="view-sorting__type-link view-sorting__type-link_active view-sorting__link-arrow_down">
 							</a>
 							<a class="view-sorting__type-link view-sorting__link-arrow_up">
 							</a>
 						</div>
 					</div>
 					<div class="catalog-view__projects">
-						<div class="projects-item ">
-							<img class="projects-item__img" src="img/img-sedona.jpg" width="358px " height="576px ">
+						<div class="projects-item">
+							<img class="projects-item__img" src="img/img-sedona.jpg" width="358" height="576" alt="Sedona">
 							<div class="projects-item__content">
 								<h3 class="projects-item__title">Sedona</h3>
 								<p class="projects-item__text">Информационный сайт для туристов</p>
 								<a class="btn projects-item__btn">9 900 <span>РУБ.</span></a>
 							</div>
 						</div>
-						<div class="projects-item ">
-							<img class="projects-item__img" src="img/img-pink.jpg" width="360px " height="576px ">
+						<div class="projects-item">
+							<img class="projects-item__img" src="img/img-pink.jpg" width="358" height="576" alt="Pink App">
 							<div class="projects-item__content">
 								<h3 class="projects-item__title">Pink App</h3>
 								<p class="projects-item__text">Продуктовый лендинг приложения для iOS и Android</p>
@@ -140,15 +140,15 @@
 							</div>
 						</div>
 						<div class="projects-item">
-							<img class="projects-item__img" src="img/img-barbershop.jpg" width="360px" height="576px">
+							<img class="projects-item__img" src="img/img-barbershop.jpg" width="358" height="576" alt="Barbershop">
 							<div class="projects-item__content">
 								<h3 class="projects-item__title">Barbershop</h3>
 								<p class="projects-item__text">Сайт салоны красоты. Для мужчин, да.</p>
 								<a class="btn projects-item__btn">9 900 <span>РУБ.</span></a>
 							</div>
 						</div>
-						<div class="projects-item ">
-							<img class="projects-item__img" src="img/img-mishka.jpg" width="360px" height="576px">
+						<div class="projects-item">
+							<img class="projects-item__img" src="img/img-mishka.jpg" width="358" height="576" alt="Mishka">
 							<div class="projects-item__content">
 								<h3 class="projects-item__title">Mishka</h3>
 								<p class="projects-item__text">Интернет-магазин вязаных игрушек</p>
@@ -156,7 +156,7 @@
 							</div>
 						</div>
 						<div class="projects-item">
-							<img class="projects-item__img" src="img/img-aplus.jpg" width="360px" height="576px">
+							<img class="projects-item__img" src="img/img-aplus.jpg" width="358" height="576" alt="A plus">
 							<div class="projects-item__content">
 								<h3 class="projects-item__title">A plus</h3>
 								<p class="projects-item__text">Лендинг курсов повышения квалификации</p>
@@ -164,7 +164,7 @@
 							</div>
 						</div>
 						<div class="projects-item">
-							<img class="projects-item__img" src="img/img-kvast.jpg" width="360px" height="576px ">
+							<img class="projects-item__img" src="img/img-kvast.jpg" width="358" height="576" alt="Квас">
 							<div class="projects-item__content">
 								<h3 class="projects-item__title">Квас</h3>
 								<p class="projects-item__text">Промо-сайт производителя крафтового кваса</p>
@@ -187,38 +187,36 @@
 						</li>
 					</ul>
 				</div>
-
 			</div>
 		</div>
 	</main>
-	<footer class="footer ">
-		<div class="map-block ">
-			<div class="map "></div>
-			<div class="container ">
-				<div class="map-content address ">
-					<h2 class="address__title ">NЁRDS DESIGN STUDIO</h2>
-					<address class="address__text ">
-						<p class="adress__street ">191186, Санкт-Петербург, 
-							ул. Б. Конюшенная, д. 19/8</p>
-						<p class="address__phone-number ">тел. +7 (812) 275-75-75</p>
-					</address>
-					<a class="btn address__btn " href="# ">Напишите нам</a>
+	<footer class="footer">
+		<div class="map-block">
+			<div class="map"></div>
+			<div class="container">
+				<div class="map-content address">
+					<h2 class="address__title">NЁRDS DESIGN STUDIO</h2>
+					<div class="address__text">
+						<p class="adress__street ">191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+						<p class="address__phone-number">тел. +7 (812) 275-75-75</p>
+					</div>
+					<a class="btn address__btn" href="#">Напишите нам</a>
 				</div>
 			</div>
 		</div>
-		<div class="container ">
-			<div class="footer-promo clearfix ">
-				<div class="social footer-promo__social ">
-					<a class=" social__link social__link-vk ">
+		<div class="container">
+			<div class="footer-promo clearfix">
+				<div class="social footer-promo__social">
+					<a class=" social__link social__link-vk">
 					</a>
-					<a class="social__link social__link-fc ">
+					<a class="social__link social__link-fb">
 					</a>
-					<a class="social__link social__link-ins ">
+					<a class="social__link social__link-ins">
 					</a>
 				</div>
-				<div class="footer-promo__content ">
-					<h2 class="footer-promo__title ">Давайте дружить, это выгодно!</h2>
-					<p class="footer-promo__text ">Скидка 10% для друзей из социальных сетей.</p>
+				<div class="footer-promo__content">
+					<h2 class="footer-promo__title">Давайте дружить, это выгодно!</h2>
+					<p class="footer-promo__text">Скидка 10% для друзей из социальных сетей.</p>
 				</div>
 			</div>
 		</div>
