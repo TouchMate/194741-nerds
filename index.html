@@ -56,7 +56,7 @@
 						<div class="slide">
 							<div class="slide__text">
 								<div class="slide__title">Долго, дорого,
-									<br>скрупулезно</div>
+									<br>скрупулезно.</div>
 								<p class="slide__content">Математически выверенный дизайн
 									<br>для вашего сайта или мобильного приложения.</p>
 								<a class="btn slide__btn" href="#">Узнать больше</a>
@@ -100,7 +100,7 @@
 							<img class="services__img" src="img/illustration-2.png" width="300" height="146" alt="Приложения">
 						</figure>
 						<h2 class="services__title">Приложения</h2>
-						<p class="services__text">Покорите топ-10 приложений в AppStore и Google Play</p>
+						<p class="services__text">Покорите топ- 10 приложений в AppStore и Google Play</p>
 						<a class="btn services__btn services__btn_color-green" href="#">Заказать</a>
 					</div>
 					<div class="services__item service__item_last">
@@ -117,7 +117,7 @@
 		<div class="about">
 			<div class="container">
 				<div class="about__container clearfix">
-					<div class="about-desc ">
+					<div class="about-desc">
 						<h2 class="about-desc__title">Мы — маленькая, но гордая
 											дизайн-студия из Краснодара.</h2>
 						<p class="about-desc__text ">Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не покладая рук, как роботы.</p>
@@ -150,30 +150,30 @@
 			<div class="container">
 				<div class="pofrolio__container">
 					<div class="porfolio__item">
-						<a class="porfolio__link">
+						<a class="porfolio__link" href="#">
 							<figure class="porfolio__pic-box">
-								<img class="porfolio__pic" src="img/portfolio-academy.png" alt="html-academy">
+								<img class="porfolio__pic porfolio__pic_academy" src="img/portfolio-academy.png" width="199" height="68" alt="html-academy">
 							</figure>
 						</a>
 					</div>
 					<div class="porfolio__item">
-						<a class="porfolio__link">
+						<a class="porfolio__link" href="#">
 							<figure class="porfolio__pic-box">
-								<img class="porfolio__pic" src="img/portfolio-borodinski.png" alt="borodinski">
+								<img class="porfolio__pic " src="img/portfolio-borodinski.png" width="209" height="87" alt="borodinski">
 							</figure>
 						</a>
 					</div>
 					<div class="porfolio__item">
-						<a class="porfolio__link">
+						<a class="porfolio__link" href="#">
 							<figure class="porfolio__pic-box">
-								<img class="porfolio__pic" src="img/portfolio-pink.png" alt="pink">
+								<img class="porfolio__pic porfolio__pic_pink" src="img/portfolio-pink.png" width="185" height="52" alt="pink">
 							</figure>
 						</a>
 					</div>
 					<div class="porfolio__item">
-						<a class="porfolio__link">
+						<a class="porfolio__link" href="#">
 							<figure class="porfolio__pic-box">
-								<img class="porfolio__pic" src="img/portfolio-mishka.png" alt="mishka">
+								<img class="porfolio__pic  porfolio__pic_mishka" src="img/portfolio-mishka.png" width="173" height="84" alt="mishka">
 							</figure>
 						</a>
 					</div>
@@ -184,83 +184,62 @@
 	<footer class="footer">
 		<div class="map-block">
 			<div class="container">
-				<div class="map-content address ">
-					<h2 class="address__title ">NЁRDS DESIGN STUDIO</h2>
-					<div class="address__text ">
-						<p class="adress__street ">191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
-						<p class="address__phone-number ">тел. +7 (812) 275-75-75</p>
+				<div class="map-content address">
+					<h2 class="address__title">NЁRDS DESIGN STUDIO</h2>
+					<div class="address__text">
+						<p class="adress__street">191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+						<p class="address__phone-number">тел. +7 (812) 275-75-75</p>
 					</div>
-					<a class="btn address__btn " href="# ">Напишите нам</a>
+					<a class="btn address__btn" href="#">Напишите нам</a>
 				</div>
 			</div>
 			<div class="map" id="map-canvas"></div>
-			<script>
-				var map;
-
-				function initMap() {
-					var map = new google.maps.Map(document.getElementById('map-canvas'), {
-						center: {
-							lat: 59.9388232,
-							lng: 30.320875
-						},
-						zoom: 17
-					});
-					var marker = new google.maps.Marker({
-						position: {
-							lat: 59.9386832,
-							lng: 30.3238000
-						},
-						map: map,
-						tile: "hello",
-						icon: "../img/map-marker.png",
-					});
-				}
-			</script>
-			<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBo-LF2wOnOns5dOAXYeTaY1v6vl3DdLJY&callback=initMap" async defer></script>
-
 		</div>
-		<div class="container ">
-			<div class="footer-promo clearfix ">
-				<div class="social footer-promo__social ">
-					<a class="social__link social__link-vk ">
+		<div class="container">
+			<div class="footer-promo clearfix">
+				<div class="social footer-promo__social">
+					<a class="social__link social__link-vk" href="#">
 					</a>
-					<a class="social__link social__link-fb ">
+					<a class="social__link social__link-fb" href="#">
 					</a>
-					<a class="social__link social__link-ins ">
+					<a class="social__link social__link-ins" href="#">
 					</a>
 				</div>
-				<div class="footer-promo__content ">
-					<h2 class="footer-promo__title ">Давайте дружить, это выгодно!</h2>
-					<p class="footer-promo__text ">Скидка 10% для друзей из социальных сетей.</p>
+				<div class="footer-promo__content">
+					<h2 class="footer-promo__title">Давайте дружить, это выгодно!</h2>
+					<p class="footer-promo__text">Скидка 10% для друзей из социальных сетей.</p>
 				</div>
 			</div>
 		</div>
 	</footer>
-	<div class="modal-content ">
-		<button class="modal-content__close " type="button " title="Закрыть ">
+	<div class="modal-content">
+		<button class="modal-content__close" type="button" title="Закрыть">
 			Закрыть
 		</button>
-		<form class="mail-form " action="# " method="post ">
-			<div class="mail-form-container ">
-				<div class="mail-form__title ">Напишите нам</div>
-				<div class="mail-form__input-boxes clearfix ">
-					<div class="mail-form__input-box1 ">
-						<label class="mail-form__label-name " for="field-name ">Ваше имя:</label>
-						<input class="mail-form__input-name " name="full-name " type="text " id="field-name " value="Представьтесь, пожалуйста ">
+		<form class="mail-form" action="#" method="post" autocomplete="off">
+			<div class="mail-form-container">
+				<div class="mail-form__title">Напишите нам</div>
+				<div class="mail-form__input-boxes clearfix">
+					<div class="mail-form__input-name-box">
+						<label class="mail-form__label-name" for="field-name">Ваше имя:</label>
+						<input class="mail-form__input-name" name="full-name" type="text" id="field-name" value="Представьтесь, пожалуйста">
 					</div>
-					<div class="mail-form__input-box2 ">
-						<label class="mail-form__label-name " for="field-email ">Ваш e-mail:</label>
-						<input class="mail-form__input-email " name="email " type="email " id="field-email " value="Для отправки ответа ">
+					<div class="mail-form__input-mail-box">
+						<label class="mail-form__label-name" for="field-email">Ваш e-mail:</label>
+						<input class="mail-form__input-email" name="email" type="email" id="field-email" value="Для отправки ответа">
 					</div>
 				</div>
-				<div class="mail-form__text-box ">
-					<label class="mail-form__label-textarea " for="field-textarea ">Текст письма:</label>
-					<textarea class="mail-form__textarea " name="message " id="field-textarea ">В свободной форме</textarea>
+				<div class="mail-form__text-box">
+					<label class="mail-form__label-textarea" for="field-textarea">Текст письма:</label>
+					<textarea class="mail-form__textarea" name="message" id="field-textarea" type="text">В свободной форме</textarea>
 				</div>
 			</div>
-			<button class="btn mail-form__btn " type="submit ">Отправить</button>
+			<button class="btn mail-form__btn" type="submit">Отправить</button>
 		</form>
 	</div>
+	<script src="js/scriptMap.js"></script>
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBo-LF2wOnOns5dOAXYeTaY1v6vl3DdLJY&amp;callback=initMap" async defer></script>
+	<script src="js/scriptForm.js"></script>
 </body>
 
 </html>
