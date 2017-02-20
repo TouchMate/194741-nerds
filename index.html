@@ -7,6 +7,7 @@
 	<link href="https://fonts.googleapis.com/css?family=Roboto:400,700&amp;subset=cyrillic" rel="stylesheet">
 	<link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" href="css/style.min.css">
+
 </head>
 
 <body>
@@ -65,9 +66,9 @@
 						<div class="slide">
 							<div class="slide__text">
 								<div class="slide__title">Любим математику
-									<br>как никто другой</div>
+									как никто другой</div>
 								<p class="slide__content">Никакого креатива, только математические формулы
-									<br>для расчета идеальных пропорций.</p>
+									для расчета идеальных пропорций.</p>
 								<a class="btn slide__btn" href="#">Узнать больше</a>
 							</div>
 						</div>
@@ -190,7 +191,7 @@
 						<p class="adress__street">191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
 						<p class="address__phone-number">тел. +7 (812) 275-75-75</p>
 					</div>
-					<a class="btn address__btn" href="#">Напишите нам</a>
+					<a class="btn address__btn" href="write-us.html">Напишите нам</a>
 				</div>
 			</div>
 			<div class="map" id="map-canvas"></div>
@@ -216,7 +217,7 @@
 		<button class="modal-content__close" type="button" title="Закрыть">
 			Закрыть
 		</button>
-		<form class="mail-form" action="#" method="post" autocomplete="off">
+		<form class="mail-form" action="echo/html" method="post" autocomplete="off">
 			<div class="mail-form-container">
 				<div class="mail-form__title">Напишите нам</div>
 				<div class="mail-form__input-boxes clearfix">
@@ -237,9 +238,10 @@
 			<button class="btn mail-form__btn" type="submit">Отправить</button>
 		</form>
 	</div>
-	<script src="js/scriptMap.js"></script>
-	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBo-LF2wOnOns5dOAXYeTaY1v6vl3DdLJY&amp;callback=initMap" async defer></script>
-	<script src="js/scriptForm.js"></script>
+
+	<script src="js/scriptMap.min.js"></script>
+	<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBo-LF2wOnOns5dOAXYeTaY1v6vl3DdLJY&amp;callback=initMap"></script>
+	<script src="js/scriptForm.min.js"></script>
 </body>
 
 </html>

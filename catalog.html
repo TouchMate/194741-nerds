@@ -7,6 +7,7 @@
 	<link href="https://fonts.googleapis.com/css?family=Roboto:400,700&amp;subset=cyrillic" rel="stylesheet">
 	<link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" href="css/style.min.css">
+	
 </head>
 
 <body>
@@ -72,11 +73,11 @@
 						</div>
 						<fieldset class="catalog-filter__type">
 							<legend class="catalog-filter-type__title">Сетка:</legend>
-							<input class="catalog-filter-type__input" type="radio" name="type-adaptive" id="adaptive" checked>
+							<input class="catalog-filter-type__input" type="radio" name="type" value="adaptive" id="adaptive" checked>
 							<label class="catalog-filter-type__label" for="adaptive">Адаптивная</label>
-							<input class="catalog-filter-type__input" type="radio" name="type-fixed" id="fixed">
+							<input class="catalog-filter-type__input" type="radio" name="type" value="fixed" id="fixed">
 							<label class="catalog-filter-type__label" for="fixed">Фиксированная</label>
-							<input class="catalog-filter-type__input" type="radio" name="type-flexible" id="rubber">
+							<input class="catalog-filter-type__input" type="radio" name="type" value="rubber" id="rubber">
 							<label class="catalog-filter-type__label" for="rubber">Резиновая</label>
 						</fieldset>
 						<fieldset class="catalog-filter__properties">
@@ -103,7 +104,7 @@
 				</form>
 				<div class="catalog-view">
 					<div class="view__sorting">
-						<h3 class="view-sorting__title">Сортировка:</h3>
+						<h3 class="view-sorting__title">Сортировать:</h3>
 						<ul class="view-sorting__list">
 							<li class="view-sorting__item">
 								<a class="view-sorting__link view-sorting__link_active" href="#">По цене</a>
@@ -124,15 +125,15 @@
 					</div>
 					<div class="catalog-view__projects">
 						<div class="projects-item">
-							<img class="projects-item__img" src="img/img-sedona.jpg" width="358" height="576" alt="Sedona">
+							<img class="projects-item__img" src="img/img-sedona.png" width="358" height="576" alt="Sedona">
 							<div class="projects-item__content">
 								<h3 class="projects-item__title">Sedona</h3>
-								<p class="projects-item__text">Информационный сайт для туристов</p>
+								<p class="projects-item__text projects-item__text_size">Информационный сайт для туристов</p>
 								<a class="btn projects-item__btn" href="#">9 900 <span>РУБ.</span></a>
 							</div>
 						</div>
 						<div class="projects-item">
-							<img class="projects-item__img" src="img/img-pink.jpg" width="358" height="576" alt="Pink App">
+							<img class="projects-item__img" src="img/img-pink.png" width="358" height="576" alt="Pink App">
 							<div class="projects-item__content">
 								<h3 class="projects-item__title">Pink App</h3>
 								<p class="projects-item__text">Продуктовый лендинг приложения для iOS и Android</p>
@@ -140,23 +141,23 @@
 							</div>
 						</div>
 						<div class="projects-item">
-							<img class="projects-item__img" src="img/img-barbershop.jpg" width="358" height="576" alt="Barbershop">
+							<img class="projects-item__img" src="img/img-barbershop.png" width="358" height="576" alt="Barbershop">
 							<div class="projects-item__content">
 								<h3 class="projects-item__title">Barbershop</h3>
-								<p class="projects-item__text">Сайт салоны красоты. Для мужчин, да.</p>
+								<p class="projects-item__text projects-item__text_size">Сайт салоны красоты. Для мужчин, да.</p>
 								<a class="btn projects-item__btn" href="#">9 900 <span>РУБ.</span></a>
 							</div>
 						</div>
 						<div class="projects-item">
-							<img class="projects-item__img" src="img/img-mishka.jpg" width="358" height="576" alt="Mishka">
+							<img class="projects-item__img" src="img/img-mishka.png" width="358" height="576" alt="Mishka">
 							<div class="projects-item__content">
 								<h3 class="projects-item__title">Mishka</h3>
-								<p class="projects-item__text">Интернет-магазин вязаных игрушек</p>
+								<p class="projects-item__text projects-item__text_size">Интернет-магазин вязаных игрушек</p>
 								<a class="btn projects-item__btn" href="#">9 900 <span>РУБ.</span></a>
 							</div>
 						</div>
 						<div class="projects-item">
-							<img class="projects-item__img" src="img/img-aplus.jpg" width="358" height="576" alt="A plus">
+							<img class="projects-item__img" src="img/img-aplus.png" width="358" height="576" alt="A plus">
 							<div class="projects-item__content">
 								<h3 class="projects-item__title">A plus</h3>
 								<p class="projects-item__text">Лендинг курсов повышения квалификации</p>
@@ -164,7 +165,7 @@
 							</div>
 						</div>
 						<div class="projects-item">
-							<img class="projects-item__img" src="img/img-kvast.jpg" width="358" height="576" alt="Квас">
+							<img class="projects-item__img" src="img/img-kvast.png" width="358" height="576" alt="Квас">
 							<div class="projects-item__content">
 								<h3 class="projects-item__title">Квас</h3>
 								<p class="projects-item__text">Промо-сайт производителя крафтового кваса</p>
@@ -222,7 +223,7 @@
 		</div>
 	</footer>
 	<script src="js/scriptMap.js"></script>
-	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBo-LF2wOnOns5dOAXYeTaY1v6vl3DdLJY&amp;callback=initMap" async defer></script>
+	<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBo-LF2wOnOns5dOAXYeTaY1v6vl3DdLJY&amp;callback=initMap"></script>
 </body>
 
 </html>
